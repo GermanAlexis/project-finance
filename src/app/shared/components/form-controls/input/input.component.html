@@ -1,0 +1,31 @@
+<div class="form-group">
+  <div class="input-group">
+    <input [type]="type" class="form-control" [formControl]="fc" [placeholder]="placeholder" />
+    <div class="input-group-append">
+      <span class="input-group-text">
+        <i class="fa fa-check-circle"></i>
+      </span>
+    </div>
+  </div>
+</div>
+
+<!-- <mat-form-field *ngIf="fc" class="w-full px-3" appearance="fill">
+  <mat-label *ngIf="label">{{ label }}</mat-label>
+  <input
+    matInput
+    [inputMask]="mask"
+    [type]="type"
+    [placeholder]="placeholder"
+    [formControl]="fc"
+    [readonly]="readonly"
+  />
+  <mat-icon
+    *ngIf="icon"
+    class="icon-size-5"
+    [svgIcon]="icon"
+    matPrefix
+  ></mat-icon>
+  <mat-hint *ngIf="hint">{{ hint }} </mat-hint>
+  <mat-error> {{ fc.errors | errorMessagePipe: errorMessages  }}</mat-error>
+</mat-form-field> -->
+
